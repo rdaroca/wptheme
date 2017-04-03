@@ -1,0 +1,251 @@
+/*
+Theme Name: tutorial theme
+Author: Richard
+Description: Wordpress Theme
+Version: 0.0.1
+*/
+
+
+.clearfix:after {
+ 	visibility: hidden;
+ 	display: block;
+ 	font-size: 0;
+ 	content: " ";
+ 	clear: both;
+ 	height: 0;
+ 	}
+
+.container	{
+	background: url('/Users/Richjane/Desktop/Static Page copy/images/bkground.jpg');
+/*	background: #eae8e5;*/
+	width: 1024px;
+	margin:	auto;
+}
+
+/*Header*/
+
+.header { 
+	background: white;
+
+}
+
+.header .logo {
+	width: 15%;
+	height: 90px;
+	float: left;
+
+
+}
+.header .logo a img {
+	height: 90px;
+	width: 100%;
+}
+
+
+.header .main_menu {
+	width: 85%;
+	float: left;
+
+}
+.header .main_menu ul li{
+	margin: 0 0;
+	text-align: center;
+	display: inline;
+	list-style-type: none;
+}
+.header .main_menu ul li a{
+	margin: 0 5px;
+	text-decoration: none;
+}
+
+.header .main_menu ul{
+	padding: 35px;
+	margin: 0 10%;
+
+}
+
+.header .main_menu ul li a.active {
+	width: 15%;
+	padding: 5px 45px;
+	background: white;
+	border-radius: 5px;
+	color: black;
+	font-weight: bold;
+	font-variant: small-caps;
+	border:1px solid black;
+}
+
+.header .main_menu ul li a.active:hover {
+	background-color: black;
+	color: white;
+}
+
+
+/*Main Content*/
+
+
+
+.main_content .featured {
+
+	width: 100%;
+	background: url('/Users/Richjane/Desktop/Static Page copy/images/bkimage.jpg') no-repeat center center;
+	background-attachment: fixed;  /*set to fix*/
+	background-size: cover;
+}
+
+.main_content .featured .featured_product {
+	width: 50%;
+	float: left;
+	position: relative;
+
+}
+
+.main_content .featured .content_image img{
+	position: absolute;
+
+}
+
+.main_content .featured .featured_content {	
+	width: 50%;
+	float: left;
+	color: white;
+	margin: 141px 0px;
+
+}
+
+.main_content .featured .featured_content h1{
+	letter-spacing: 5px;
+	font-variant: small-caps;
+	text-align: center;
+}
+
+.main_content .featured .featured_content h2{
+	letter-spacing: 3px;
+	font-variant: small-caps;
+	text-align: center;
+}
+
+.main_content .featured .featured_content p{
+	text-align: justify;
+	margin: 0px 20px;
+
+}
+
+.main_content .featured .featured_content p a.readmore {
+	color: white;
+	padding: 2px 4px;
+	border: 1px solid black;
+	border-radius: 4px;
+	background:black;
+	text-decoration: none;
+}
+
+/*other products*/
+
+.main_content .other_products {
+/*	margin-top: 2px;*/
+	background: url('/Users/Richjane/Desktop/Static Page copy/images/bkground.jpg') no-repeat center center;
+	position: relative;
+}
+
+.main_content .other_products ul {
+	margin: 0px 0px;
+
+}
+
+
+.main_content .other_products ul li {
+/*	background-color: #505d68;*/
+	list-style-type: none;
+	margin: 10px 10px;
+	width: 30%;
+	float: left;
+	border-bottom: 5px solid white;
+	border-left: 5px solid white;
+	position: relative;
+}
+
+.main_content .other_products ul li:hover {
+	border-left: 5px solid #6f1717;
+	border-bottom: 5px solid #6f1717;
+
+}
+
+
+.main_content .other_products ul li img {
+	width: 100%;
+}
+
+.main_content .other_products ul li h2{
+	text-align: center;
+
+}
+
+.main_content .other_products ul li h3{
+	text-align: justify;
+	margin: 0px 10px;
+
+}
+
+/*footer*/
+
+.footer {
+	border-top: 1px solid white;
+	width: 100%;
+	background: black;
+}
+
+.footer .Copyright {
+	width: 50%;
+	float: left;
+
+}
+.footer .Copyright p {
+	color: white;
+	margin-left: 10px; 
+}
+
+
+
+.footer .footer_links {
+	width: 50%;
+	float: left;
+}
+
+.footer .footer_links ul li{
+
+	list-style-type: none;
+	display: inline;
+}
+
+.footer .footer_links ul li a {
+	margin: 0 10px;
+	text-decoration: none;
+	color: white;
+}
+
+.footer .footer_links ul li a:hover {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
