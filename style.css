@@ -54,20 +54,21 @@ Version: 0.0.1
 	padding: 0;
 	margin-top: 33px;
 
+
 }
 
 .main_menu > ul > li {
 	display: inline-block;
 	position: relative;
 	left: 85px;
-
+	margin: 0 10px;
 
 }
 
 .main_menu > ul > li > a {
 
 	display: block;
-	margin: 0 10px;
+
 	padding: 5px 50px;
 	border: 1px solid black;
 	border-radius: 5px;
@@ -79,18 +80,19 @@ Version: 0.0.1
 
 }
 
-.main_menu ul li a:hover {
+.main_menu > ul > li > a:hover {
 	text-decoration: none; 
 	background: black;
 	color: white;
 }
 
-.main_menu ul > li.current-menu-item > a {
+.main_menu > ul > li.current-menu-item > a {
 	background: black;
 	color: white;
 }
 
 /*Sub Menu*/
+
 .main_menu ul ul {
 
 	display:none; /*used to hide submenus*/
@@ -99,10 +101,16 @@ Version: 0.0.1
 
 .main_menu ul li:hover > ul {
 	display:block;
-	width:95%;
+	width:100%;
 	margin: 0;
+    background: white;
 
+}
 
+.main_menu > ul > li:hover > ul {
+	border: 1px solid black;
+    border-top-style: none;
+    border-radius: 5px;
 }
 
 .main_menu ul ul li {
@@ -110,97 +118,43 @@ Version: 0.0.1
 	position: relative;
 	float: none;
 	width: 100%;
-	padding: 5px 15px;
-	margin: 0px 10px;
-	border-radius: 5px;
-	border: 1px solid black;
+	padding: 5px 0px;
+}
 
+.main_menu ul ul li:hover {
+
+	background-color: black;
+}
+
+.main_menu ul ul > li:hover > a{
+
+	color: white;
+}
+.main_menu ul ul li a {
+	text-decoration: none;
+	color: black;
+	margin: 0 10px;
 
 }
 
+/*SubSUbmenus*/
 
-.main_menu ul ul > li > a {
-	text-decoration: none;
+.main_menu ul ul li:hover > ul {
+	border: 1px solid black;
+    border-radius: 5px;
+}
+
+.main_menu > ul > ul > ul > li > a {
 	color: black;
-	background: white;
-
-
-
+}
+.main_menu ul ul ul > li:hover a{
+	color: white;
 }
 
 .main_menu ul ul li ul {
 	left: 100%;
 	top: 0;
 }
-
-
-
-
-
-
-/*.header .main_menu ul li{
-
-	margin: 0 0;
-	text-align: center;
-	position: relative;
-	display: inline;
-	list-style-type: none;
-	position: relative;
-	width: 20%;
-}*/
-
-/*.header .main_menu > ul > li > a{
-	margin: 0 10px;
-	text-decoration: none;
-
-	width: 15%;
-	padding: 5px 45px;
-	background: white;
-	border-radius: 5px;
-	color: black;
-	font-weight: bold;
-	font-variant: small-caps;
-	border:1px solid black;
-}*/
-/*
-.header .main_menu ul{
-	padding: 35px;
-	margin: 0 9%;
-	position: relative;
-
-}
-
-.header .main_menu ul li.current-menu-item a {
-	background-color: black;
-	color: white;
-
-}
-
-
-.header .main_menu ul li a:hover {
-	background-color: black;
-	color: white;
-}
-
-/*submenus*/
-
-/*.header .main_menu ul ul {*/
-/*	margin: 0;
-	padding: 0;*/
-/*	display: none;
-}
-*/
-/*.header .main_menu ul li:hover > ul {
-	display: block;
-	position: absolute;
-
-}*/
-
-/*.header .main_menu ul li ul{*/
-/*	position: absolute;*/
-/*
-}*/
-
 
 /*Main Content*/
 
