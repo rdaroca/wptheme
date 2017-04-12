@@ -79,9 +79,9 @@
 				<?php $sub_heading = get_post_meta(get_the_ID(), 'Sub Heading', true); ?> 
 				<h4 class="sub"><?php echo $sub_heading ?></h4> <!-- Displays the Subheading of the post -->
 
-				<p>
-					<?php the_excerpt(); ?><!-- Displays the excerpt of the post -->
-				</p>
+				
+				<?php the_excerpt(); ?><!-- Displays the excerpt of the post -->
+			
 			</div>
 
 

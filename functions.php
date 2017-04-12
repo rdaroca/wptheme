@@ -43,3 +43,11 @@ add_theme_support( 'post-thumbnails' ); //adds the featured image for POST
 
 set_post_thumbnail_size( 1200, 9999 );
 
+function wpdocs_excerpt_more( $more ) {
+    return sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
+        get_permalink( get_the_ID() ),
+        __( 'Read More' )
+    );
+}
+
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
