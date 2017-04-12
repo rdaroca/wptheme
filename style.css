@@ -97,6 +97,7 @@ Version: 0.0.1
 
 	display:none; /*used to hide submenus*/
 	position: absolute; /*used so that it won't bother the position of the parent ul*/
+	z-index: 1;
 }
 
 .main_menu ul li:hover > ul {
