@@ -167,7 +167,7 @@ Version: 0.0.1
 	background: url('http://192.168.51.51/wp-content/uploads/2017/04/bkimage.jpg') no-repeat center center;
 	background-attachment: fixed;  /*set to fix*/
 	background-size: cover;
-/*	z-index: -100;*/
+
 
 }
 
@@ -175,7 +175,6 @@ Version: 0.0.1
 	width: 50%;
 	float: left;
 	position: relative;
-/*	z-index: -1;*/
 
 }
 
