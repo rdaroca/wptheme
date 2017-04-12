@@ -1,7 +1,7 @@
 
 		<?php get_header(); ?>
 
-		<div class="main_content clearfix">
+<!-- 		<div class="main_content clearfix">
 
 			<div class="featured clearfix">
 				<div class="featured_product">
@@ -46,6 +46,17 @@
 
 			</div>
 
-		</div>
+		</div> -->
+
+
+		<?php if ( have_posts() ) : ?>  <!-- https://codex.wordpress.org/The_Loop -->
+		    <?php while ( have_posts() ) : the_post(); ?>
+
+		        <h2><?php the_title(); ?></h2>  <!-- https://codex.wordpress.org/Template_Tags -->
+		        <p><?php the_excerpt(); ?></p>
+
+		    <?php endwhile; ?>
+		<?php endif; ?>
+
 
 		<?php get_footer(); ?>

@@ -39,4 +39,7 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
+add_theme_support( 'post-thumbnails' ); //adds the featured image for POST
+
+set_post_thumbnail_size( 1200, 9999 );
 
