@@ -83,18 +83,53 @@
 					<?php the_excerpt(); ?><!-- Displays the excerpt of the post -->
 				</p>
 			</div>
-
-
-
-
+	</div>
 
 		<?php }
 
 	} ?>
 
+	<div class="other_products clearfix">
+		<ul class="Listings">
+		<?php
+
+		$args = array( 'posts_per_page' => 3, 'category_name' => 'other-products' );
+		// The Query
+		$the_query = new WP_Query( $args );
+		
+		// The Loop
+		if ( $the_query->have_posts() ) {
+			
+			while ( $the_query->have_posts() ) {
+				$the_query->the_post();
+		?>
+		
+				<li class="post_wrapper">
+					<div class="thumbnail">
+						<?php
+
+							if ( has_post_thumbnail()) {		//checks if a featured image exist if yes display full size of the image
+								the_post_thumbnail('full');		// output is equal to <img src=“” />
+							}																	
+						?>
+					</div>
+						<h2>
+							<a href="<?php the_permalink(); ?>"> <!-- this would make the title a link of the post -->
+								<?php the_title(); ?>  <!-- this would dispay the title of the post -->
+							</a>
+						</h2>
+							<?php the_excerpt(); ?> <!-- this would dispay an exerpt of the post -->
+
+				</li>
+			<?php }
+		}	?>	
+
+
+
+		</ul>
+
 	</div>
 </div>
-
 
 
 <?php get_footer(); ?>
