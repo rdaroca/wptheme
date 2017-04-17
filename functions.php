@@ -50,4 +50,8 @@ function wpdocs_excerpt_more( $more ) {
     );
 }
 
+<<<<<<< HEAD
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+=======
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+>>>>>>> 4e49ce03d23a18c121e5e552cf8f08acf1b3e3c7

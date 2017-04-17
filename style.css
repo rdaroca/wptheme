@@ -164,7 +164,7 @@ Version: 0.0.1
 .main_content .featured {
 
 	width: 100%;
-	background: url('http://192.168.51.51/wp-content/uploads/2017/04/bkimage.jpg') no-repeat center center;
+	background: url('http://127.0.0.1/wp-content/uploads/2017/04/bkimage.jpg') no-repeat center center;
 	background-attachment: fixed;  /*set to fix*/
 	background-size: cover;
 
@@ -206,11 +206,16 @@ Version: 0.0.1
 .main_content .featured .featured_content p{
 	line-height: 25px;
 	text-align: justify;
+	line-height: 20px;
 	margin: 0px 20px;
 
 }
 
+<<<<<<< HEAD
 .main_content .featured .featured_content p a.read-more {
+=======
+.main_content p a.read-more {
+>>>>>>> 4e49ce03d23a18c121e5e552cf8f08acf1b3e3c7
 	color: white;
 	padding: 2px 4px;
 	margin: 0 5px;
@@ -267,6 +272,7 @@ Version: 0.0.1
 
 }
 
+
 /*footer*/
 
 .footer {
@@ -303,11 +309,6 @@ Version: 0.0.1
 	text-decoration: none;
 	color: white;
 }
-
-.footer .footer_links ul li a:hover {
-
-}
-
 
 
 
