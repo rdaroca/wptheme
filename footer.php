@@ -7,12 +7,16 @@
 			</div>
 
 			<div class="footer_links">
-				<ul>
-					<li><a href="#">Terms & Conditions</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-					<li><a href="#">Sitemap</a></li>
-					<li><a href="#">Contact Us</a></li>
-				</ul>
+
+ 			<?php
+
+				if ( has_nav_menu('footer-menu') ) {
+			 		wp_nav_menu( array( 
+			 		'theme_location' => 'footer-menu', 
+			 		'container_class' => 'footer clearfix') );
+			}
+			
+			?> 
 
 			</div>
 

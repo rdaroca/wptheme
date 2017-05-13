@@ -18,18 +18,9 @@ Version: 0.0.1
 .container	{
 	background: url('/Users/Richjane/Desktop/Static Page copy/images/bkground.jpg');
 /*	background: #eae8e5;*/
-	width: 1024px;
+	width: 1250px;
 	margin:	auto;
 	z-index: -2;
-}
-
-p a.read-more {
-	color: white;
-	padding: 2px 4px;
-	border: 1px solid black;
-	border-radius: 4px;
-	background:black;
-	text-decoration: none;
 }
 
 
@@ -170,34 +161,22 @@ p a.read-more {
 /*Main Content*/
 
 
-
-.main_content .featured {
-
-	width: 100%;
-	background: url('http://127.0.0.1/wp-content/uploads/2017/04/bkimage.jpg') no-repeat center center;
-	background-attachment: fixed;  /*set to fix*/
-	background-size: cover;
-
-
-}
-
 .main_content .featured .featured_product {
 	width: 50%;
 	float: left;
 	position: relative;
 
 }
-
-.main_content .featured .content_image img{
-	position: absolute;
-
+.main_content .featured .featured_product img{
+	display: block;
+	margin: auto;
 }
 
 .main_content .featured .featured_content {	
 	width: 50%;
 	float: left;
 	color: white;
-	margin: 141px 0px;
+	margin: 80px 0px;
 
 }
 
@@ -205,6 +184,10 @@ p a.read-more {
 	letter-spacing: 5px;
 	font-variant: small-caps;
 	text-align: center;
+}
+.main_content .featured .featured_content img{
+	display: block;
+	margin: auto;
 }
 
 .main_content .featured .featured_content h2{
@@ -220,20 +203,26 @@ p a.read-more {
 
 }
 
-p a.read-more {
-	color: white;
-	padding: 2px 4px;
-	border: 1px solid black;
-	border-radius: 4px;
-	background:black;
+.main_content .tp-caption a{
+
 	text-decoration: none;
+	color: white;
+	font-family: "sstpro-roman", "arial", sans-serif;
+}
+
+.main_content .tp-caption:hover a{
+
+	color: #ef7143;
+	font-weight: 20px;
+
 }
 
 /*other products*/
 
 .main_content .other_products {
 /*	margin-top: 2px;*/
-	background: url('/Users/Richjane/Desktop/Static Page copy/images/bkground.jpg') no-repeat center center;
+	background-color: rgb(31,31,31);
+	min-height: 500px;
 	position: relative;
 }
 
@@ -249,38 +238,64 @@ p a.read-more {
 	margin: 10px 10px;
 	width: 30%;
 	float: left;
-	border-bottom: 5px solid white;
-	border-left: 5px solid white;
+	border-top: : 5px solid rgb(31,31,31);
 	position: relative;
 }
 
 .main_content .other_products ul li:hover {
-	border-left: 5px solid #6f1717;
-	border-bottom: 5px solid #6f1717;
+
+	border-top: 5px solid #ef7143;
+	margin-top: 5px;
 
 }
 
 
 .main_content .other_products ul li img {
 	width: 100%;
+	min-height: 200px;
 }
 
-.main_content .other_products ul li h2{
+.main_content .other_products ul li h2 {
 	text-align: center;
 
 }
 
-.main_content .other_products ul li h3{
-	text-align: justify;
-	margin: 0px 10px;
+.main_content .other_products ul li h2 a{
+	color: white;	
+	text-decoration: none;
 
+}
+.main_content .other_products ul li > p{
+	text-align: center;
+	color: white;
+	font-family: "sstpro-roman", "arial", sans-serif;
+
+}
+.main_content .other_products ul li p a{
+	clear: both;
+	text-align: center;
+	color: white;
+
+}
+
+.other_products p a.read-more {
+
+	display:block;
+	width: 125px;
+	margin: auto;
+	color: white;
+	padding: 10px 10px;
+	border: 1px solid black;
+	border-radius: 4px;
+	background: #ef7143;
+	text-decoration: none;
 }
 
 
 /*footer*/
 
 .footer {
-	border-top: 1px solid white;
+	border-top: 0px solid white;
 	width: 100%;
 	background: black;
 }
@@ -294,8 +309,6 @@ p a.read-more {
 	color: white;
 	margin-left: 10px; 
 }
-
-
 
 .footer .footer_links {
 	width: 50%;
@@ -314,6 +327,7 @@ p a.read-more {
 	color: white;
 }
 
+/*Post*/
 .post ul li {
 	width: 100%;
 	clear: both;
@@ -327,12 +341,12 @@ p a.read-more {
 
 .post ul li .post_thumbnail img { /*Use this to center an image in a div*/
 
-	display:block;
+	display: block;
 	margin: auto;
 }
 
 .post ul li .post_content {
-	float:left;
+	float: right;
 	width: 50%;
 	margin: auto;
 }
@@ -340,9 +354,45 @@ p a.read-more {
 .post ul li .post_content h2 {
 	text-align: center;
 }
+/*Single*/
 
+.content-area {
+	width: 100%;
+}
+.single_container {
+	width: 100%;
 
+}
 
+.single_container .single_thumbnail {
+	width: 100%;
+	float: left;
+}
+
+.single_container .single_content{
+	width: 100%;
+}
+
+.single_container .single_content p {
+	position: absolute;
+	float: right;
+	top: 130%;
+	width: 65%;
+	font-family: "Open Sans";
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 22px;
+	text-align: center;
+	color: white;
+
+}
+
+/*used so that the other products will be arrange if the limit exceeds 3 post*/
+/*.Listings {
+	display: flex;
+	flex-wrap: wrap;
+}
+*/
 
 
 

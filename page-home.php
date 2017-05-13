@@ -51,43 +51,10 @@
 <div class="main_content clearfix">
 	<div class="featured clearfix">
 
-	<?php 
-	//Tells WP to display only 1 page and get it from Featured product category
-	$args = array( 'posts_per_page' => 1, 'category_name' => 'featured-product' );
-	// The Query
-	$the_query = new WP_Query( $args );
+		<?php echo do_shortcode ("[rev_slider alias='Featured Content']"); ?>
 
-	// The Loop
-	if ( $the_query->have_posts() ) {
-		
-		while ( $the_query->have_posts() ) {
-			$the_query->the_post(); ?>
-
-			<div class="featured_product">
-				<?php
-				
-				if ( has_post_thumbnail()) {		//checks if a featured image exist if yes display full size of the image
-					the_post_thumbnail('full');		// output is equal to <img src=“” />
-				}
-				
-			?>
-
-			</div>
-
-			<div class="featured_content">
-				<h2><?php the_title(); ?></h2>		<!-- Displays the tile of the post -->
-				<?php $sub_heading = get_post_meta(get_the_ID(), 'Sub Heading', true); ?> 
-				<h4 class="sub"><?php echo $sub_heading ?></h4> <!-- Displays the Subheading of the post -->
-
-				<p>
-					<?php the_excerpt(); ?><!-- Displays the excerpt of the post -->
-				</p>
-			</div>
 	</div>
 
-		<?php }
-
-	} ?>
 
 	<div class="other_products clearfix">
 		<ul class="Listings">
@@ -119,6 +86,7 @@
 							</a>
 						</h2>
 							<?php the_excerpt(); ?> <!-- this would dispay an exerpt of the post -->
+
 
 				</li>
 			<?php }
