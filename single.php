@@ -16,13 +16,14 @@
 				</div>
 
 				<div class="single_content">
+					<div class="content_container">	
+						<?php	
+							
+							the_content();
 
-				<?php	
-					
-					the_content();
-
-				endwhile; // End of the loop.
-				?>
+						endwhile; // End of the loop.
+						?>
+					</div>
 				</div>
 
 			</div>

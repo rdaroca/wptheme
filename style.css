@@ -370,14 +370,22 @@ Version: 0.0.1
 }
 
 .single_container .single_content{
+	position: relative;
 	width: 100%;
+}
+
+.single_container .single_content span{
+	width: 90%;
+	margin: 0 auto;
+	display: block;
 }
 
 .single_container .single_content p {
 	position: absolute;
 	float: right;
-	top: 130%;
-	width: 65%;
+	z-index: 13;
+	top: 80%;
+	width: 100%;	
 	font-family: "Open Sans";
 	font-weight: 700;
 	font-size: 20px;
